@@ -1,17 +1,25 @@
-import { memo } from "react";
+import { memo, useState, useEffect } from "react";
 import styled from "styled-components";
 import GlobalStyles from "./globalStyles";
+
+//components
+import Header from "./components/header"
+import Footer from "./components/footer"
+import Body from "./components/body"
 
 const Title = styled.h1`
   color: #666;
 `;
 
 function App() {
+ 
+
   return (
     <>
       <GlobalStyles />
-      <Title>Welcome</Title>
-      <p>Use this as a starting point to develop your own application :-)</p>
+      <Header />
+      <Body />
+      <Footer />
     </>
   );
 }
